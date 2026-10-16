@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <title>Triangulator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js"></script>
+        <script src="utils.js"></script>
+        <script src="algorithm.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Triangulator</h1>
+        </header>
+        <main>
+            <label>Points of Concurrency Type: </label>
+            <select id="RegressionChoose">
+                <option value="0">Choose</option>
+                <option value="centroid">Centroid</option>
+                <option value="circumcenter">Circumcenter</option>
+            </select>
+            <br>
+            <br>
+            <input type="text" placeholder="X1: " id="x1">
+            <br>
+            <input type="text" placeholder="Y1: " id="y1">
+            <br>
+            <br>
+            <input type="text" placeholder="X2: " id="x2">
+            <br>
+            <input type="text" placeholder="Y2: " id="y2">
+            <br>
+            <br>
+            <input type="text" placeholder="X3: " id="x3">
+            <br>
+            <input type="text" placeholder="Y3: " id="y3">
+            <br>
+            <br>
+            <button onclick="sendCoordinates()">Compute</button>
+            <br>
+            <br>
+            <hr>
+            <p id="pointsIdentity"></p>
+        </main>
+    </body>
+</html>

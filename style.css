@@ -1,0 +1,12 @@
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: dodgerblue;
+    color: white;
+}
+
+button {
+    background-color: green;
+    border: 2px solid darkgreen;
+    color: white;
+}
